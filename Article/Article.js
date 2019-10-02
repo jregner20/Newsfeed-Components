@@ -85,6 +85,16 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+
+  },
+  {
+    title: `Finish your Componenets project ASAP!!!`,
+    date: `Oct 2nd, 2019`,
+    firstParagraph: `Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project`,
+    
+    secondParagraph: `Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project`,
+
+    thirdParagraph: `Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project.`
   }
 ];
 
