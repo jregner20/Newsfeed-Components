@@ -151,7 +151,18 @@ function createComp(title, date, firstParagraph, secondParagraph, thirdParagraph
   firstP.textContent = firstParagraph;
   secondP.textContent = secondParagraph;
   thirdP.textContent = thirdParagraph;
+  expSpan.addEventListener('click', () => {
+    article.classList.toggle('.article-open');
+  });
+
+
 
   return article;
-
 }
+
+const art = document.querySelector('.articles');
+
+data.forEach(element => {
+  art.appendChild(createComp(element.title, element.date, element.firstParagraph, element.secondParagraph, element.thirdParagraph))
+});
+
