@@ -137,6 +137,7 @@ function createComp(title, date, firstParagraph, secondParagraph, thirdParagraph
   // creates class names
 
   article.classList.add('article');
+  aTitle.classList.add('title')
   aDate.classList.add('date');
   firstP.classList.add('P1');
   secondP.classList.add('P2');
@@ -144,5 +145,13 @@ function createComp(title, date, firstParagraph, secondParagraph, thirdParagraph
   expSpan.classList.add('expandButton');
 
   // creates content
+
+  aTitle.textContent = title;
+  aDate.textContent = date;
+  firstP.textContent = firstParagraph;
+  secondP.textContent = secondParagraph;
+  thirdP.textContent = thirdParagraph;
+
+  return article;
 
 }
