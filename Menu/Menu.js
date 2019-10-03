@@ -62,3 +62,4 @@ function menuComp(array) {
 const header = document.querySelector('.header');
 header.appendChild(menuComp(menuItems));
 
+

@@ -161,8 +161,9 @@ function createComp(title, date, firstParagraph, secondParagraph, thirdParagraph
   firstP.textContent = firstParagraph;
   secondP.textContent = secondParagraph;
   thirdP.textContent = thirdParagraph;
+  expSpan.textContent = 'button';
   expSpan.addEventListener('click', () => {
-    article.classList.toggle('.article-open');
+    article.classList.toggle('article-open');
   });
 
 
