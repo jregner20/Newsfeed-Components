@@ -85,6 +85,16 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+
+  },
+  {
+    title: `Finish your Componenets project ASAP!!!`,
+    date: `Oct 2nd, 2019`,
+    firstParagraph: `Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project`,
+    
+    secondParagraph: `Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project`,
+
+    thirdParagraph: `Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project Project Project Project Project Project ProjectProject Project ProjectProject Project Project.`
   }
 ];
 
@@ -112,3 +122,58 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+function createComp(title, date, firstParagraph, secondParagraph, thirdParagraph) {
+
+  // creates elements
+  
+  const article = document.createElement('div');
+  const aTitle = document.createElement('h2');
+  const aDate = document.createElement('p');
+  const firstP = document.createElement('p');
+  const secondP = document.createElement('p');
+  const thirdP = document.createElement('p');
+  const expSpan = document.createElement('span');
+
+  // creates element structure
+
+  article.appendChild(aTitle);
+  article.appendChild(aDate);
+  article.appendChild(firstP);
+  article.appendChild(secondP);
+  article.appendChild(thirdP);
+  article.appendChild(expSpan);
+  
+  // creates class names
+
+  article.classList.add('article');
+  aTitle.classList.add('title')
+  aDate.classList.add('date');
+  firstP.classList.add('P1');
+  secondP.classList.add('P2');
+  thirdP.classList.add('P3');
+  expSpan.classList.add('expandButton');
+
+  // creates content
+
+  aTitle.textContent = title;
+  aDate.textContent = date;
+  firstP.textContent = firstParagraph;
+  secondP.textContent = secondParagraph;
+  thirdP.textContent = thirdParagraph;
+  expSpan.textContent = 'button';
+  expSpan.addEventListener('click', () => {
+    article.classList.toggle('article-open');
+  });
+
+
+
+  return article;
+}
+
+const art = document.querySelector('.articles');
+
+data.forEach(element => {
+  art.appendChild(createComp(element.title, element.date, element.firstParagraph, element.secondParagraph, element.thirdParagraph))
+});
+
